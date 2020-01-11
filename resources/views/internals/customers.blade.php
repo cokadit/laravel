@@ -1,9 +1,16 @@
-<h1>Customers</h1>
+<!-- layout itu ngambil dari nama viewnya layout.blade.php -->
+@extends('layout')
 
-<ul>
-    
-    @foreach ($customers as $customers)
-        <li>{{ $customers }}</li>
-    @endforeach
-    
-</ul>
+@section('content')
+
+    <h1>Customers</h1>
+
+    <ul>
+        
+        @foreach ($customers as $customers)
+            <li>{{ $customers }}</li>
+        @endforeach
+        
+    </ul>
+
+@endsection
